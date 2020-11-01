@@ -1,4 +1,4 @@
-仿华为云Clasroom访问链接：<a href="www.fypavilion.top">link</a> (备用：<a href="http://124.71.171.99)
+仿华为云Clasroom访问链接：<a href="/fypavilion.top">link</a> (备用：<a href="http://124.71.171.99)
 
 demo访问链接：<a href="www.fypavilion.top/demo "></a> (备用：<a href="http://124.71.171.99/demo)
 
