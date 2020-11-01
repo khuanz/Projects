@@ -1,0 +1,48 @@
+.view_item{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid rgb(245, 245, 245);
+}
+.view_item text{
+  margin: 20rpx;
+  width: 250rpx;
+}
+.view_item input{
+ width: 100%;
+ margin-right: 20rpx;
+}
+.view_item_between{
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid rgb(245, 245, 245);
+}
+.value_left{
+  margin: 20rpx;
+  width: 250rpx;
+}
+
+.img_more{
+  width: 50rpx;
+  height: 50rpx;
+}
+.pick{
+  display: flex;
+  align-items: center;
+}
+.view_address{
+  padding: 20rpx;
+  width:100%;
+  box-sizing:border-box;  
+  border-bottom: 15rpx solid rgb(245, 245, 245);
+}
+.view_address textarea{
+  width:100%;
+  height: 150rpx;
+}
+.add{
+  width: 70%;
+  margin-top: 100rpx;
+}

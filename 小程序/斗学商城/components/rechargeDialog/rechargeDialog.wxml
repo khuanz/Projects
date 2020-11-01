@@ -1,0 +1,26 @@
+<view class='content' hidden='{{isShown}}'catchtap='cancel_click' >
+  <view class='dialog' catchtap='none_click'>
+    <form bindsubmit="formSubmit">
+      <view class='ip_money'>  
+        <text >输入金额：</text>
+        <view class='ip_money right'>
+          <input placeholder='0' placeholder-class='placeholder' value='{{value}}' name='money' type='number'></input>
+          <text >元</text>
+        </view>
+      </view>
+      <view class='money_value'>
+        <text catchtap='bt_click' data-value="50">50</text>
+        <text catchtap='bt_click' data-value="100">100</text>
+        <text catchtap='bt_click' data-value="200">200</text>
+      </view>
+      <view class='money_value'>
+        <text catchtap='bt_click' data-value="500">500</text>
+        <text catchtap='bt_click' data-value="800">800</text>
+        <text catchtap='bt_click' data-value="1000">1000</text>
+      </view>
+      <view class='view_foot'>
+        <button  formType="submit">{{ confirmText }}</button>
+      </view>
+    </form>
+  </view>
+</view>

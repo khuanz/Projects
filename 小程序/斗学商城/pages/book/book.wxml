@@ -1,0 +1,10 @@
+<view class='container'>
+  <view class='content' wx:for="{{list}}" wx:key="id" data-index="{{index}}" bindtap='item_click'>
+    <view class='item_left'>
+      <text>{{item.bookItem}}</text>
+      <text class='time'>到店时间：{{item.comeTime}}</text>
+    </view>
+    <view class='circle circle_{{item.status}}'></view>
+  </view>
+  <button class='add' type='primary' catchtap='add_click'>添加预约</button>
+</view>

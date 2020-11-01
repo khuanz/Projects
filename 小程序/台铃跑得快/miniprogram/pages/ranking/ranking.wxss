@@ -1,0 +1,114 @@
+::-webkit-scrollbar{
+width: 0;
+height: 0;
+color: transparent;
+}
+page{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
+  background-color: rgba(108, 236, 198, 0.788);
+}
+label{
+  display: inline-block;
+}
+.box {
+  width: 100%;
+  padding: 40rpx;
+  box-sizing: border-box;
+}
+.result-box{
+  padding: 20rpx 1rpx;
+  border:2rpx solid rgba(143, 255, 68, 0.849);
+  border-radius: 20rpx;
+  background-color: #fff;
+  box-shadow: 10rpx 12rpx 6rpx 7rpx #eee;
+}
+.sheet{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid #ddd;
+  text-align: center;
+}
+.sheet label:nth-child(3){
+  flex: 3;
+}
+.sheet label:nth-child(2){
+  flex: 6;
+}
+.sheet label:nth-child(1){
+  flex: 3;
+}
+.title{
+  font-size: 40rpx;
+  font-weight: 400;
+}
+.main label{
+  color: #555;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 30rpx;
+}
+.main,.title{
+  height: 90rpx;
+  line-height: 90rpx;
+}
+
+.main:nth-child(1) .pic{
+  color: gold;
+}
+.main:nth-child(2) .pic{
+  color: silver;
+}
+.main:nth-child(3) .pic{
+  color: brown;
+}
+.main:nth-of-type(-n+3)  .pic{
+  font-size:40rpx;
+  font-weight: 700;
+}
+.clickBox{
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx 10rpx;
+}
+.clickBox view{
+  flex:3;
+}
+/* 按钮 */
+.btn{
+  font-size: 30rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 25rpx;
+  margin: 15rpx;
+}
+.anginPlay{
+  color: #eee;
+  background-color: #aaa;
+}
+.refresh{
+  background-color: rgb(7, 193, 96);
+  color: #eee;
+}
+.share.false{
+  background-color: rgb(100, 100, 100);
+  color: #000;
+}
+.share.true{
+  background-color: rgb(193, 7, 7);
+  color: #eee;
+}
+/* 高亮显示样式 */
+.height label{
+  z-index: 999;
+  font-size: 30rpx;
+  font-weight: 700;
+  color: royalblue;
+}
+
+

@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="container">
+  <image class="img-bg" src="../../image/adv.png" mode="scaleToFill"></image>
+  <button class="bt-go" open-type="getUserInfo" bindgetuserinfo="getUserInfo" hidden="{{isTrue}}">立即体验</button>
+</view>

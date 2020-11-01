@@ -1,0 +1,9 @@
+<view class='content' wx:for="{{list}}" wx:key="id">
+  <text >{{item.rechargeTime}}</text>
+  <text class='money'>+￥{{item.money}}</text>
+</view>
+<view class='content'>
+  <text >2019-05-28 12:00:56</text>
+  <text class='money'>+￥1500</text>
+</view>
+

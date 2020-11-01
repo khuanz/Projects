@@ -1,0 +1,35 @@
+<view class='container'>
+  <scroll-view class='view_scroll'scroll-y>
+    <view class='content'>
+      <view>商品名称:</view>
+      <text>{{goodsDetail.name}}</text>
+      <view class='line'></view>
+    </view>
+    <view class='content'>
+      <view>封面图片：</view>
+      <image src='{{goodsDetail.image}}' mode='widthFix'></image>
+      <view class='line'></view>
+    </view>
+    <view class='content'>
+      <view>商品简介:</view>
+      <text>{{goodsDetail.detail}}</text>
+      <view class='line'></view>
+    </view>
+    <view class='time'>
+      <view>上架时间:</view>
+      <text>{{goodsDetail.upTime}}</text>
+      <view class='line'></view>
+    </view>
+  </scroll-view>
+  <view class='view_bottom'>
+    <view class='view_bottom_item'>
+      <text>单价：</text>
+      <text class='price'>￥{{goodsDetail.price}}</text>
+    </view>
+    <view class='view_bottom_item'>
+      <button class='add' bindtap='add'>加入购物车</button>
+      <button class='submit' bindtap='check_click'>购买</button>
+    </view>
+  </view>
+</view>
+

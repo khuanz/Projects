@@ -1,0 +1,9 @@
+#初始化项目
+ npm install
+#运行项目
+ npm run dev
+#访问项目
+浏览器键入：http://localhost:8080 回车
+
+项目介绍
+本次项目 使用到vue+element-ui+swiper搭建 

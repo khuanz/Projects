@@ -1,0 +1,27 @@
+<view class='container'>
+  <scroll-view scroll-y class='scroll' class='view_list' bindscrolltolower='loadMore' bindscrolltoupper='reflash'>
+    <block wx:for="{{list}}">
+      <view class='list_item' data-index="{{index}}" bindtap='item_click'>
+        <view class='list_item_left'>
+          <image class="logo" mode="scaleToFill" src='{{item.image}}'></image>
+          <view class='list_item_middle'>
+            <text>{{item.name}}</text>
+            <text class='price'>￥{{item.price}}</text>
+          </view>
+        </view>
+        <text class='add' data-index="{{index}}" catchtap='add'>购买</text>
+      </view>
+    </block>
+  </scroll-view>
+  <view class='view_bottom'>
+    <view class='view_bottom_item'>
+      <image src='../../image/shopping.png'></image>
+      <text>{{total_num}}件商品</text>
+      <text class='money_total'>￥{{total_money}}</text>
+    </view>
+    <view class='view_bottom_item'>
+      <button class='clear' bindtap='clear'>清空</button>
+      <button class='submit' bindtap='check_click'>结算</button>
+    </view>
+  </view>
+</view>

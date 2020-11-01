@@ -1,0 +1,45 @@
+<view class='container'>
+  <form bindsubmit="formSubmit">
+    <scroll-view scroll-y class='content'>
+      <text class='title'>收货地址：</text>
+      <view class='view_item' bindtap='address_click'>
+        <view wx:if="{{hasAddress}}" class='view_address'>
+          <view class='view_item_left'>
+              <text>{{address.name}}</text>
+              <text>{{address.phone}}</text>
+          </view>
+          <view class='address'>
+            <text >{{address.province+address.city+address.district+address.detail}}</text>
+          </view>
+        </view>
+        <text wx:else class='no_address'>没有默认地址，请先添加</text>
+        <image class='more' src='../../image/right.png'></image>
+      </view>
+      <text class='title'>商品列表：</text>
+      <block wx:for="{{list}}">
+        <view class='list_item' data-index="{{index}}" bindtap='item_click'>
+          <view class='list_item_left'>
+            <image class="logo" mode="scaleToFill" src='{{item.goods.image}}'></image>
+            <view class='list_item_middle'>
+              <text>{{item.goods.name}}</text>
+              <view class='item_price'>
+                <text class='price'>￥{{item.goods.price}}</text>
+                <text>*{{item.number}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+      <view class='total_price'>
+        <text >总价：{{total_price}}</text>
+      </view>
+      <text class='title'>备注：</text>
+      <view class='view_mark'>
+        <textarea placeholder='请填写备注' placeholder-class='placeholder' name='mark'></textarea>
+      </view>
+    </scroll-view>
+    <view class='check'>
+      <button type='primary' formType="submit">结算</button>
+    </view>
+  </form>
+</view>

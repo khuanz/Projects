@@ -1,0 +1,4 @@
+<view class='body'>
+  <canvas canvas-id="myCanvas" class='canvas-box' style="background:#fff"></canvas>
+  <button class="sharebtn" bindtap="ShowCanvas">保存分享图</button>
+</view>

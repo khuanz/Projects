@@ -1,0 +1,52 @@
+<wxs module="m1">
+  var msg = function(val){
+      var status;
+      if(val==1){
+        status='待发货'
+      }else if(val==2){
+        status='待收货'
+      }else if(val==3){
+        status='已完成'
+      }
+      return status
+  }
+  module.exports.getStaus = msg;
+</wxs>
+<scroll-view scroll-y class='content'>
+  <view class='order_no'>
+    <text>订单编号：{{orderDetail.order.orderNum}}</text>
+    <text class='status'>{{m1.getStaus(orderDetail.order.status)}}</text>
+  </view>
+  <view class='time'>创建时间：{{orderDetail.order.createTime}}</view>
+  <text class='title'>收货地址：</text>
+  <view class='view_item' bindtap='address_click'>
+    <view class='view_item_left'>
+        <text>{{orderDetail.address.name}}</text>
+        <text>{{orderDetail.address.phone}}</text>
+    </view>
+    <view class='address'>
+      <text >{{orderDetail.address.province+orderDetail.address.city+orderDetail.address.district+orderDetail.address.detail}}</text>
+    </view>
+  </view>
+  <text class='title'>商品列表：</text>
+  <block wx:for="{{orderDetail.item_list}}">
+    <view class='list_item' data-index="{{index}}" bindtap='item_click'>
+      <view class='list_item_left'>
+        <image class="logo" mode="scaleToFill" src='{{item.image}}'></image>
+        <view class='list_item_middle'>
+          <text>{{item.name}}</text>
+          <view class='item_price'>
+            <text class='price'>￥{{item.price}}</text>
+            <text>*{{item.num}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+  <view class='total_price'>
+    <text >总价：{{orderDetail.order.money}}</text>
+  </view>
+  <text class='title'>备注：</text>
+  <view class='address'>{{orderDetail.order.message}}</view>
+  <button class='submit' hidden='{{orderDetail.order.status!=2}}' catchtap='submit_click'>确认收货</button>
+</scroll-view>

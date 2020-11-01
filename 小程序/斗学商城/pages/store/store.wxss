@@ -1,0 +1,81 @@
+/* pages/store/store.wxss */
+.view_bottom{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  border-top: 1rpx solid rgb(245, 245, 245);
+  border-bottom: 1rpx solid rgb(245, 245, 245);
+  position: absolute;
+  bottom: 0;
+  height: 10vh;
+}
+.view_bottom image{
+  width: 50rpx;
+  height: 50rpx;
+  padding: 20rpx;
+}
+.view_bottom_item{
+  display: flex;
+  align-items: center;
+}
+.view_bottom_item text{
+  font-size: 30rpx;
+}
+.money_total{
+  color: orange;
+  margin-left: 20rpx;
+}
+.clear{
+  margin: 20rpx;
+  width: 120rpx;
+  font-size: 30rpx;
+}
+.submit{
+  margin: 20rpx;
+  width: 120rpx;
+  background: red;
+  color: white;
+  font-size: 30rpx;
+}
+.view_list{
+  height: 90vh;
+}
+.list_item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1rpx solid rgb(245, 245, 245);
+}
+.logo {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 20rpx;
+  padding: 20rpx;
+  flex-shrink:0;
+}
+.add{
+  padding: 15rpx 30rpx;
+  background: rgb(126, 126, 238);
+  color: white;
+  font-size: 30rpx;
+  margin-right: 20rpx;
+  border-radius: 10rpx;
+  flex-shrink:0;
+}
+.list_item_left{
+  display: flex;
+  align-items: center;
+}
+.list_item_middle{
+  display: flex;
+  flex-direction: column;
+  
+}
+.list_item_middle text{
+  word-break:break-all;
+}
+.price{
+  color: orange;
+  margin-top: 20rpx;
+}

@@ -1,0 +1,46 @@
+<wxs module="m1">
+  var msg = function(val){
+      var status;
+      if(val==0){
+        status='已过期'
+      }else if(val==1){
+        status='已接受'
+      }else if(val==2){
+        status='已拒绝'
+      }else if(val==3){
+        status='未处理'
+      }
+      return status
+  }
+  module.exports.getStaus = msg;
+</wxs>
+<view class='container'>
+  <scroll-view class='view_scroll'scroll-y>
+    <view class='status'>
+      <view>预约申请:</view>
+      <text class='status_{{details.status}}'>{{m1.getStaus(details.status)}}</text>
+    </view>
+    <view class='content'>
+      <view>服务项目:</view>
+      <text>{{details.bookItem}}</text>
+    </view>
+  
+    <view class='time'>
+      <view>预约时间:</view>
+      <text>{{details.bookTime}}</text>
+    </view>
+    <view class='time'>
+      <view>到店时间:</view>
+      <text>{{details.comeTime}}</text>
+    </view>
+    <view class='content'>
+      <view>留言:</view>
+      <text>{{details.message}}</text>
+    </view>
+  </scroll-view>
+  <view class='view_bottom'hidden='{{details.isHidden}}'>
+    <text>预约已处理或者已失效</text>
+    <button class='delete' bindtap='delete_click' >删除</button>
+  </view>
+</view>
+

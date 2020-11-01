@@ -1,0 +1,8 @@
+{
+  "navigationBarBackgroundColor": "#00e3e3",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "成绩排行榜",
+  "backgroundColor": "#ddd",
+  "backgroundTextStyle": "light",
+  "enablePullDownRefresh": false
+}

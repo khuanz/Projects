@@ -1,0 +1,67 @@
+/* pages/order/order.wxss */
+.content{
+  display: flex;
+  justify-content:space-between;
+  border-bottom: 1px solid rgb(245, 245, 245);
+  align-items:center;
+}
+.money{
+  color: rgb(19, 148, 19);
+}
+.item{
+  display: flex;
+  flex-direction: column;
+  margin: 20rpx;
+}
+.item_right{
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  align-items:flex-end;
+  margin: 20rpx;
+}
+.confirm{
+  font-size: 20rpx;
+  width: 150rpx;
+  background: red;
+  color: white;
+}
+.order{
+  font-size: 30rpx;
+
+}
+.order_no{
+  font-size: 30rpx;
+  color: blue;
+  
+}
+.time{
+   font-size: 20rpx;
+   margin-top: 10rpx;
+}
+.swiper-tab {
+  text-align: center;
+  line-height:10vh;
+  height: 10vh;
+  margin-top: auto
+}
+.tab-list-left {
+  font-size: 30rpx;
+  display: inline-block;
+  width: 25%;
+  border: 1px solid #bbada0;
+  line-height: 60rpx;
+  color: #bbada0;
+}
+.tab-list-right {
+  line-height: 60rpx;
+  font-size: 30rpx;
+  display: inline-block;
+  width: 25%;
+  border: 1px solid #bbada0;
+  color: #bbada0;
+}
+.on {
+  color: #fff;
+  background-color: #bbada0;
+}

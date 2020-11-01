@@ -1,0 +1,30 @@
+<view class='container'>
+  <form bindsubmit="formSubmit" class='formContaner'>
+    <scroll-view class='view_scroll'scroll-y>
+      <view class='content'>
+        <view>服务项目:</view>
+        <input placeholder='请输入服务项目名称' name='name'></input>
+      </view>
+      <view class='content'>
+        <view>预约日期:</view>
+        <picker mode="date" value="{{date}}" start="{{start_date}}" end="2020-01-01" bindchange="bindDateChange" name="date">
+          <view>当前选择: {{date}}</view>
+        </picker>
+      </view>
+      <view class='content'>
+        <view>预约时间:</view>
+        <picker mode="time" value="{{time}}" start="09:00" end="21:00" bindchange="bindTimeChange" name="time">
+          <view> 当前选择: {{time}}</view>
+        </picker>
+      </view>
+      <view class='content'>
+        <view>留言:</view>
+        <textarea placeholder='请输入留言' placeholder-class='placeholder' name='message'></textarea>
+        <view class='line'></view>
+      </view>
+    </scroll-view>
+    <view class='view_bottom'>
+      <button class='sumbit' type='primary' formType="submit">确定</button>
+    </view>
+  </form>
+</view>

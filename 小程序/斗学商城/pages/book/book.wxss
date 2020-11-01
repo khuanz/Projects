@@ -1,0 +1,44 @@
+.add{
+  width: 70%;
+  margin: 20rpx 0;
+}
+.content{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(187, 178, 178);
+  padding: 20rpx
+}
+.item_left text{
+  word-break:break-all;
+}
+.circle{
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 20rpx;
+  background: #000;
+  margin: 20rpx;
+  flex-shrink:0;
+}
+.circle_0{
+  background: red
+}
+.circle_1{
+  background: rgb(44, 8, 173)
+}
+.circle_2{
+  background: rgb(12, 245, 109)
+}
+.circle_3{
+ 	background: rgb(181, 6, 235)
+}
+.item_left{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+}
+.time{
+  font-size: 35rpx;
+  margin-top: 10rpx;
+}

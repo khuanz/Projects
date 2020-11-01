@@ -1,0 +1,65 @@
+/**index.wxss**/
+.container {
+   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80rpx 0;
+  box-sizing: border-box;
+} 
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userinfo .getinfo{
+position: absolute;
+top:50%;
+left: 50%;
+transform: translate(-50%,-50%);
+  align-items: center;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #fff;
+}
+/* 用户信息 */
+.userpro{
+  width:450rpx;
+ height: 100%;
+  padding-top: 40rpx;
+}
+.userpro .session{
+  margin-top: 25rpx;
+
+}
+.userpro .session text{
+    font-weight: 700;
+}
+.userpro .session input{
+  width: 90%;
+  height: 80rpx;
+  border:2rpx solid #ccc;
+  box-shadow: inset 0rpx 0  20rpx  #ccc;
+  border-radius: 10rpx;
+  margin-top:10rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  text-align: center;
+  transform: skewX(-10deg);
+  background-color: white;
+}
+.userpro .subinfo{
+  margin-top: 150rpx;
+  width: 250rpx;
+  background-color:rgb(7,193,96);
+  border:2rpx solid rgba(143, 255, 68, 0.849);
+  color: white;
+}

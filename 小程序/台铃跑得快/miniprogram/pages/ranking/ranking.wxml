@@ -1,0 +1,28 @@
+<view class="box">
+  <view class="result-box">
+      <view class="sheet title">
+        <!-- 排名 -->
+        <label>排名</label>
+        <!-- 昵称 -->
+        <label>昵称</label>    
+        <!-- 成绩 -->
+        <label>成绩</label>
+      </view>
+    <scroll-view scroll-y scroll-top="{{scrollTop}}" style="height:850rpx;">
+      <!-- 数据展示 -->
+      <view class="sheet main {{openid==item._openid?'height':''}}" wx:for="{{resultList}}" data-index="{{index}}" wx:key="index">
+        <!-- 排名 -->
+        <label class="pic">{{index+1}}</label>
+        <!-- 昵称 -->
+        <label>{{item.nickname}}</label> 
+        <!-- 成绩 -->
+        <label>{{item.time}}</label>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="clickBox">
+    <view class="anginPlay btn" bindtap="angin">再来一次</view>
+    <view class="refresh btn" bindtap="LoadData">刷新</view>
+    <view class="share {{flag}} btn" bindtap="{{flag?'ShareGo':''}}">我的成绩</view>
+  </view>
+</view>

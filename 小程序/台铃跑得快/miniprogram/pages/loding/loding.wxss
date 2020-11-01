@@ -1,0 +1,21 @@
+/* pages/loding/loding.wxss */
+
+page {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(108, 236, 198, 0.788);
+}
+
+.view {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  padding: 5rpx 40rpx;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  align-items: center;
+}

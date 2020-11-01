@@ -1,0 +1,12 @@
+.content{
+  display: flex;
+  justify-content:space-between;
+  border-bottom: 1px solid #bbb;
+}
+text{
+  font-size: 35rpx;
+  padding: 30rpx;
+}
+.money{
+  color: red;
+}

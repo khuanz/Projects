@@ -1,0 +1,28 @@
+<wxs module="m1">
+  var msg = function(val){
+      var status;
+      if(val==0){
+        status='已完成'
+      }else if(val==1){
+        status='待发货'
+      }else if(val==2){
+        status='待收货'
+      }
+      return status
+  }
+  module.exports.getStaus = msg;
+</wxs>
+<view class="swiper-tab">
+  <view class="tab-list-left {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">时间排序</view>
+  <view class="tab-list-right {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">金额排序 </view>
+</view>
+<view class="content {{index%2==0 ? 'bg':''}}" wx:for="{{list}}" wx:key="id">
+  <view class='item'>
+    <text class='order'>订单号：<text class='order_no'>{{item.orderNum}}</text></text>
+    <text class='time'>{{item.createTime}}</text>
+  </view>
+  <view class='item'>
+    <text class='money'>-￥{{item.money}}</text>
+    <text class='staus_{{item.status}}'>{{m1.getStaus(item.status)}}</text>
+  </view>
+</view>

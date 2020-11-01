@@ -1,0 +1,27 @@
+<!--pages/paopao/paopao.wxml-->
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button class="getinfo" wx:if='{{!hasUserInfo}}' open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <!-- <button wx:else></button> -->
+    <block wx:if='{{hasUserInfo}}'>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="userpro" wx:if="{{hasUserInfo}}">
+    <form class="userform" bindsubmit="formSubmit" >
+      <view class="session">
+      <text>姓名</text>
+      <input type="text" name='username' maxlength="4" value="{{username}}" /></view>
+      <view class="session">
+      <text>电话</text>
+      <input type="number" name='tel' maxlength="11" bindchange="inputPhoneNum" value="{{tel}}"/></view>
+      <view class="session">
+      <text>邮箱</text>
+      <input type="text" name = 'email' bindchange="inputemail" value="{{email}}"/></view>
+      <!-- 提交按钮 -->
+      <button class="subinfo" form-type="submit">确认提交</button>
+    </form>
+  </view>
+</view>

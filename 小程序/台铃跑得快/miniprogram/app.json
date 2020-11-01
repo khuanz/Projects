@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/loding/loding",
+    "pages/index/index",
+    "pages/ranking/ranking",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#00e3e3",
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "跑得快",
+    "navigationBarTextStyle": "white"
+ 
+  },
+  "sitemapLocation": "sitemap.json"
+}

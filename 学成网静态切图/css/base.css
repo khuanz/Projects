@@ -1,0 +1,199 @@
+body,html{
+	background-color: #f3f5f7;
+	min-width: 1300px;
+	margin: 0 auto;
+}
+/*初始化*/
+*{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+	display:block;
+}
+i{
+	font-style:normal;
+}
+ul	li{
+	list-style: none;
+}
+input{
+	outline: none;
+
+}
+/*导入字体图标文件*/
+@font-face{ /*声明字体 引用字体*/
+			font-family:"icomoon";
+			src: url('../icomoon/fonts/icomoon.eot?7kkyc2');
+			src: url('../icomoon/fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+				url('../icomoon/fonts/icomoon.eot?7kkyc2') format('truetype'),
+				url('../icomoon/fonts/icomoon.woff?7kkyc2') format('woff'),
+				url('../icomoon/fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+			font-size:normal; /*italic 倾斜*/
+		}
+/*清除浮动*/
+.clearfix:after{
+  	visibility: hidden;
+  	display: block;
+  	font-size: 0;
+  	content: " ";
+ 	clear: both;
+  	height: 0;
+}
+/*头部导航栏开始*/
+.header{
+	margin: 30px auto;
+	width: 1300px;
+}
+/*logo图标样式*/
+.logo a{
+	background:url(../images/logo.gif) no-repeat;
+	width:200px;
+	height: 42px;
+	font-size: 0;
+	float: left;
+	margin-right:50px;
+	display: inline-block;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+/*选择板块*/
+.js_sub{
+	border-bottom:2px solid #00a4ff;
+}
+/*导航栏左边*/
+.header .fl li{
+	float: left;
+	line-height: 42px;
+	margin-right: 40px;
+}
+.header .fl li a{
+	color: #050505;
+	font-size: 18px;
+}
+/*导航栏右边*/
+.header .fr li{
+	float: left;
+	line-height: 42px;
+	/*position: relative;*/
+	color:#666666;
+	margin-left:30px;
+
+}
+.header .fr li a{
+	font-size: 14px;
+	color:#666666;
+}
+.header .fr .so{
+	position: relative;
+	right: 30px;
+	/*width: 350px;
+	clear: both;*/
+}
+.header .fr input{
+	position: absolute;
+	top: 0;
+	right: 50px;
+	border:1px solid #00a4ff;
+	height: 40px;
+	width: 300px;
+	padding-left:3px; 
+}
+.header .fr button{
+	position: absolute;
+	left: -50px;
+	top: 0;
+	height: 42px;
+	width: 50px;
+	border:0;
+	font-size: 14px;
+	color:#fff;
+	font-style:normal;
+	background-color: #00a4ff;
+}
+.fr  .tixing::after{
+	font-family: "icomoon";
+	content: "\e951";
+	font-style:normal;
+}
+.header .fr li:nth-child(3){
+	position: relative;
+}
+.fr .xhd{
+	width: 4px;
+	height: 4px;
+	background-color:red;
+	border-radius:50px;
+	position: absolute;
+	right: 0;
+	top:9px;
+}
+.fr .user-pic .toux{
+	font-size:0;
+	width: 30px;
+	height: 30px;
+	line-height: 42px;
+	display:inline-block;
+	border-radius:50%;
+	background:url(../images/toux.gif) no-repeat center;
+}
+.fr .user-nam {
+	margin-left: 4px!important;
+}
+.sousuo::after{
+	font-family: 'icomoon';
+	content: '\e986';
+}
+
+
+/*尾部样式*/
+.footer{
+	background-color:#fff;
+	margin-top:50px;
+	
+}
+.footer-more{
+	margin: 0 auto;
+	width: 1000px;
+	padding: 40px 0;
+}
+/*左边布局样式*/
+.more_l{
+	width: 50%;
+	margin-left: 10px;
+}
+.more_l.logo a{
+	margin-bottom:25px;
+}
+.more_l p{
+	font-size:12px;
+	color:#666666;
+}
+.more_l .install{
+	width: 120px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	border:1px solid #00a4ff;
+	color:#00a4ff;
+	margin-top:15px;
+}
+/*右边布局样式*/
+.more_r .middle{
+	margin:auto 80px;
+}
+.more_r ul p{
+	font-size:16px;
+	color:#333333;
+	margin-bottom: 15px;
+}
+.more_r ul li a{
+	font-size: 12px;
+	color: #333333;
+	margin-bottom:5px;
+}

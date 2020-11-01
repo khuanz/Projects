@@ -1,0 +1,77 @@
+/* pages/consumption/consumption.wxss */
+.content{
+  display: flex;
+  justify-content:space-between;
+  border-bottom: 1px solid rgb(245, 245, 245);
+  align-items: center;
+}
+.bg{
+  background-color: rgb(245, 245, 245)
+}
+.money{
+  color: rgb(19, 148, 19);
+  margin-right: 20rpx;
+}
+.staus_0{
+margin-right: 20rpx;
+  text-align: right;
+  font-size: 25rpx;
+}
+.staus_1{
+margin-right: 20rpx;
+  text-align: right;
+  font-size: 25rpx;
+  color: red
+}
+.staus_2{
+margin-right: 20rpx;
+  text-align: right;
+  font-size: 25rpx;
+  color: blue
+}
+.item{
+  display: flex;
+  flex-direction: column;
+  margin: 20rpx;
+}
+
+.order{
+  font-size: 30rpx;
+
+}
+.order_no{
+  font-size: 30rpx;
+  color: blue;
+  
+}
+.time{
+   font-size: 20rpx;
+   margin-top: 10rpx;
+}
+
+.swiper-tab {
+  text-align: center;
+  line-height:10vh;
+  height: 10vh;
+  margin-top: auto
+}
+.tab-list-left {
+  font-size: 30rpx;
+  display: inline-block;
+  width: 25%;
+  border: 1px solid #bbada0;
+  line-height: 60rpx;
+  color: #bbada0;
+}
+.tab-list-right {
+  line-height: 60rpx;
+  font-size: 30rpx;
+  display: inline-block;
+  width: 25%;
+  border: 1px solid #bbada0;
+  color: #bbada0;
+}
+.on {
+  color: #fff;
+  background-color: #bbada0;
+}

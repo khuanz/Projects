@@ -1,0 +1,61 @@
+.title_bg{
+  width: 100%;
+  height: 200rpx;
+}
+.title{
+  width: 100%;
+  height: 120rpx;
+  position: absolute;
+  top:40rpx;
+  display: flex;
+  align-items:center;
+}
+.userinfo_avatar {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  margin-left: 40rpx;
+}
+.user_name{
+  margin-left: 30rpx;
+  color:white;
+}
+.item{
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+  border-bottom: 1rpx solid rgb(218, 201, 201);
+  align-items:center;
+}
+.img_more{
+  margin: 30rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+.item_left{
+  display: flex;
+  align-items:center;
+}
+.img_left{
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 20rpx;
+}
+.text_left{
+  margin-left: 20rpx;
+  font-size: 35rpx;
+}
+.item_right{
+  margin: 30rpx;
+  height: 50rpx;
+}
+.right_balance{
+  font-size: 35rpx;
+}
+.right_recharge{
+  font-size: 35rpx;
+  color: red;
+  border: 1px solid red;
+  padding: 5rpx;
+  margin-left: 10rpx;
+}

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {},
+  "disableScroll":true,
+  "usingComponents": {
+    "dialog": "/components/rechargeDialog/rechargeDialog"
+  },
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "个人中心"
+}

@@ -1,0 +1,14 @@
+/**index.wxss**/
+.img-bg{
+  width: 100vw;
+  height: 100vh;
+}
+.bt-go{
+  background: rgb(223, 10, 10);
+  color:#fff;
+  position: absolute;
+  bottom: 37vh;
+  padding: 0 50rpx;
+  border-radius: 10rpx;
+}
+

@@ -1,0 +1,74 @@
+.content{
+  background: rgba(0, 0, 0, 0.3);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items:center;
+   justify-content:center;
+   z-index: 1000;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+.dialog{
+  background: rgb(245, 245, 245);
+  width: 70%;
+  height: 40%;
+  border-radius: 10rpx;
+  position: relative;
+}
+.ip_money{
+  padding: 10rpx;
+  display: flex;
+  align-items:center;
+  justify-content:space-between;
+  background: white;
+  margin: 60rpx 20rpx 40rpx 20rpx;
+}
+.right{
+  padding: 0rpx;
+  margin:0rpx;
+}
+.ip_money text{
+  font-size: 30rpx;
+  margin-right: 10rpx;
+}
+.ip_money input{
+  text-align: right;
+  width:230rpx;
+  margin-right: 20rpx;
+  font-size: 30rpx;
+}
+.placeholder{
+  font-size: 30rpx
+}
+.money_value{
+  display: flex;
+  justify-content:space-between;
+  margin: 20rpx 10rpx;
+}
+.money_value text{
+  color: white;
+  background: red;
+  margin: 10rpx;
+  flex: 1;
+  text-align: center;
+  border-radius: 5rpx;
+}
+.view_foot{
+  display: flex;
+  margin-top: 10rpx;
+  align-items:center;
+  justify-content:space-between;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.view_foot button{
+  flex: 1;
+  text-align: center;
+  background: #fff;
+}
+button::after{
+  border: none;
+}

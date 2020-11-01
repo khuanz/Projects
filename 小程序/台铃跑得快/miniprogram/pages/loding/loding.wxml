@@ -1,0 +1,7 @@
+<!--pages/loding/loding.wxml-->
+<view class="view">
+<view class="g_rules">
+<text></text>
+</view>
+  <button class="btn" bindtap="btnUrl">{{type}}</button>
+</view>

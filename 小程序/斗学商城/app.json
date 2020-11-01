@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/store/store",
+    "pages/book/book",
+    "pages/order/order",
+    "pages/person/person",
+    "pages/recharge/recharge",
+    "pages/consumption/consumption",
+    "pages/address/address",
+    "pages/addressDetail/addressDetail",
+    "pages/goodsDetails/goodsDetails",
+    "pages/check/check",
+    "pages/bookDetails/bookDetails",
+    "pages/addBook/addBook",
+    "pages/orderDetails/orderDetails"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "斗学商城",
+    "navigationBarTextStyle": "black"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "uploadFile": 10000
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#81c7d1",
+    "color": "#a6a6a6",
+    "list": [
+      {
+        "pagePath": "pages/store/store",
+        "iconPath": "tab/store_normal.png",
+        "selectedIconPath": "tab/store_select.png",
+        "text": "商店"
+      },
+      {
+        "pagePath": "pages/book/book",
+        "iconPath": "tab/book_normal.png",
+        "selectedIconPath": "tab/book_select.png",
+        "text": "预约"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "iconPath": "tab/order_normal.png",
+        "selectedIconPath": "tab/order_select.png",
+        "text": "订单"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "iconPath": "tab/person_normal.png",
+        "selectedIconPath": "tab/person_select.png",
+        "text": "账户"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

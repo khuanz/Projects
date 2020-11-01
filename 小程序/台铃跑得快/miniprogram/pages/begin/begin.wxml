@@ -1,0 +1,14 @@
+<!-- begin.wxml -->
+<view class='main'>
+<view class="{{isOver?'overnone':'overdis'}}">
+  <view>
+    <image class='{{isImg?"visible":"hidden"}}' src='../../images/end.gif' bindtap="starRun"></image>
+  </view>
+  <view class="starRun" bindtap="starRun">
+    <text class='star'>开始</text>
+  </view>
+</view>
+<view>
+<image class="imgsize {{!isOver?'overnone':'overdis'}}" src="../../images/run.gif"></image>
+</view>
+</view>

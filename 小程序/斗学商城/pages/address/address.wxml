@@ -1,0 +1,28 @@
+<view class='container'>
+  <view class='content' wx:for="{{list}}" wx:key="id" data-index="{{index}}" bindtap='item_click' >
+    <view class='view_item'>
+      <text>{{item.name}}</text>
+      <text>{{item.phone}}</text>
+    </view>
+    <view class='address'>
+      <text >{{item.province+item.city+item.district+item.detail}}</text>
+    </view>
+    <view class='view_item line'>
+      <view class='view_bottom_item' data-index="{{index}}" catchtap='default_click'>
+        <image src="../../image/{{item.defaultFlag==true?'img_selected':'img_unselect'}}.png"></image>
+        <text class="{{item.defaultFlag==true?'on':''}}">{{item.defaultFlag==true?'默认地址':'设为默认地址'}}</text>
+      </view>
+      <view class='view_bottom_item'>
+        <view class='view_bottom_item' data-index="{{index}}" catchtap='edit_click'>
+          <image src='../../image/img_edit.png'></image>
+          <text>编辑</text>
+        </view>
+        <view class='view_bottom_item' data-index="{{index}}" catchtap='delete_click'>
+          <image src='../../image/img_delete.png'></image>
+          <text >删除</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <button class='add' type='primary' catchtap='add_click'>添加新地址</button>
+</view>

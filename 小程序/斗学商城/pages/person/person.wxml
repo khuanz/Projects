@@ -1,0 +1,40 @@
+<view class='container'> 
+  <image class='title_bg' src='../../image/profile_bg.png'></image>
+  <view class='title'>
+    <image class="userinfo_avatar" src='{{userInfo.headImage}}' mode="cover"></image>
+    <text class='user_name'>{{userInfo.name}}</text>
+  </view>
+
+  <view class='item'>
+    <view class='item_left'>
+      <image class='img_left' src='../../image/balance.png'></image>
+      <text class='text_left'>余额</text>
+    </view>
+    <view class='item_right' bindtap='pay_click'>
+      <text class='right_balance'>￥{{userInfo.balance}}</text>
+      <text class='right_recharge'>充值</text>
+    </view>
+  </view>
+  <view class='item' bindtap='consumption_click'>
+    <view class='item_left'>
+      <image class='img_left' src='../../image/consumption.png'></image>
+      <text class='text_left'>消费记录</text>
+    </view>
+    <image class='img_more' src='../../image/right.png'></image>
+  </view>
+  <view class='item' bindtap='recharge_click'>
+    <view class='item_left'>
+      <image class='img_left' src='../../image/recharge.png'></image>
+      <text class='text_left'>充值记录</text>
+    </view>
+    <image class='img_more' src='../../image/right.png'></image>
+  </view>
+  <view class='item' bindtap='address_click'>
+    <view class='item_left'>
+      <image class='img_left' src='../../image/address.png'></image>
+      <text class='text_left'>收货地址</text>
+    </view>
+    <image class='img_more' src='../../image/right.png'></image>
+  </view>
+  <dialog id="dialog"confirmText="确认" bind:cancelEvent="cancelClick" bind:confirmEvent="confirmClick"> </dialog>
+</view>
