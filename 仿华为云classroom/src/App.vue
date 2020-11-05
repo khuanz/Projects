@@ -56,6 +56,9 @@ a:hover,
 a:visited {
   text-decoration: none;
 }
+body,html{
+  height:100%;
+}
 ul,
 li {
   list-style: none;

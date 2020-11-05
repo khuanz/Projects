@@ -10,7 +10,7 @@
     </div>
     <div class="rightBox">
       <a id="btnReset">教学平台</a>
-      <ul>
+      <ul class="">
         <li id="goLogin">登陆</li>
         <li id="goRegister">注册</li>
       </ul>
@@ -101,8 +101,12 @@ export default {
   content: '|';
   margin: 0 16px;
 }
-ul li{
+.rightBox ul{
+  height: 100%;
+}
+.rightBox ul li{
   display: inline-block;
   font-size: 14px;
+  line-height: 24px;
 }
 </style>
